@@ -12,7 +12,7 @@
   align-items: center;
   justify-content: space-around;
 }
-.header-nav ul li a{
+.header-nav ul li a {
   text-decoration: none;
   color: black;
 }
@@ -26,4 +26,13 @@
   .header{
     padding: 1rem;
   }
+}
+
+.post-vaga{
+  background-color: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+  font-family: helvetica;
+  font-size: .9rem;
 }
