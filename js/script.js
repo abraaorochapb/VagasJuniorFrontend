@@ -6,8 +6,7 @@ $(document).ready(function(){
   $('.slider').slider();
 });
 
-$('.dropdown-trigger').dropdown();
-
+console.log("executou")
 document.addEventListener('DOMContentLoaded', function() {
   // Função para fazer fetch na API e preencher a grade
   function fetchAndPopulateGrid() {
