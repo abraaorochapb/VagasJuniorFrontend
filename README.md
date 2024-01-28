@@ -4,9 +4,9 @@ Bem-vindo ao repositório do frontend pdo projeto Vagas Junior.
 
 ## Tecnologias Utilizadas
 
-- **JavaScript Vanilla:**
+- **JavaScript Vanilla**
 
-- **Materialize CSS:**
+- **Materialize CSS**
 
 
 
