@@ -1,104 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VagasJunior</title>
-  <link rel="stylesheet" href="styles/general-styles.css">
-  <link rel="stylesheet" href="styles/header.css">
-  <link rel="stylesheet" href="styles/main-content.css">
-  <link rel="stylesheet" href="styles/sidebar.css">
-  <link rel="stylesheet" href="styles/footer.css">
-  <link rel="stylesheet" href="styles/modal.css">
-  <script src="script.js" defer></script>
-</head>
-<body>
-  <header class="header">
-    <h1>VagasJunior</h1>
-    <nav class="header-nav">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><button class="post-vaga">Postar Vaga</button></li>
-        <li><a href="https://www.linkedin.com/in/abraao-rocha-de-paula-849561259/" target="_blank">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
+  <html>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous" defer></script>
+      <script type="text/javascript" src="js/materialize.min.js"defer></script>
+      <script src="js/script.js" defer></script>
+      <title>VagasJunior</title>
+    </head>
 
-  <dialog>
-    <div class="form-container">
-      <form id="vagaForm" method="post" action="http://127.0.0.1:3000/index.html">
-        <div class="form-header"> 
-        <p>Nome da Vaga: </p>
-        <input type="text" name="name" id="name" placeholder="Insira o nome da vaga" required>
-        
-        <p>Empregador: </p>
-        <input type="text" name="email" id="Empregador" placeholder="Insira o nome da empresa" required>
-        
-        <p>Setor:</p>
-        <input type="radio" name="setor" id="frontend" value="Frontend" required>
-        <label for="frontend">Frontend</label>
-    
-        <input type="radio" name="setor" id="backend" value="Backend" required>
-        <label for="backend">Backend</label>
-    
-        <input type="radio" name="setor" id="fullstack" value="Fullstack" required>
-        <label for="fullstack">Fullstack</label>
-    
-        <input type="radio" name="setor" id="devops" value="DevOps" required>
-        <label for="devops">DevOps</label>
-    
-        <input type="radio" name="setor" id="cloud" value="Cloud" required>
-        <label for="cloud">Cloud</label>
-    
-        <p>Descrição: </p>
-        <textarea name="Descricao" id="Descricao" placeholder="Forneça informações sobre a vaga" required></textarea>
-        </div>
-  
-        <div class="form-footer">
-          <input type="submit" value="Enviar" class="submit-btn">
-        </div>
-        
-    </form>  
-    </div>
-  </dialog>
+    <body>
+      <nav class="light-blue lighten-1">
+        <div class="nav-wrapper container">
+          <div class="brand-logo light">VagasJunior</div>
 
-  <div class="container">
-    <main class="posts-container">
-      <div class="post">
-        <h3 class="post-title">Título</h3>
-        <p class="description">
-          Descrição da vaga aqui.
-        </p>
-        <a href="#">Read more</a>
-      </div>
-    </main>
+          <!-- header desktop -->
+          <ul class="right hide-on-med-and-down">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">Postar vaga</a></li>
+            <li><a href="https://www.linkedin.com/in/abraao-rocha-de-paula-849561259/" target="_blank">Contato</a></li>
+          </ul>
 
-    <aside class="sidebar">
-      <section class="search-bar">
-        <h4>Search</h4>
-        <form >
-          <input type="text" placeholder="Search..." class="search">
-          <input type="submit" value="Search" class="submit-btn">
-        </form>
-      </section>  
-        
-      <section class="categories">
-        <h4>Categorias</h4>
-          <nav>
-            <ul>
-              <li><a href="#">Frontend</a></li>
-              <li><a href="#">Backend</a></li>
-              <li><a href="#">Fullstack</a></li>
-              <li><a href="#">DevOps</a></li>
-              <li><a href="#">Cloud</a></li>
-            </ul>
-          </nav>
-      </section>  
-    </aside>
-  </div>
-  
-  <footer class ="footer">
-    <p>Abraao Rocha de Paula &copy; 2023</p>
-  </footer>
-</body>
-</html>
+          <!-- header mobile -->
+          <ul id="slide-out" class="sidenav"">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">Postar vaga</a></li>
+            <li><a href="https://www.linkedin.com/in/abraao-rocha-de-paula-849561259/" target="_blank">Contato</a></li>
+          </ul>
+          <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          
+          </div>
+      </nav>
+
+    </body>
+
+  </html>
