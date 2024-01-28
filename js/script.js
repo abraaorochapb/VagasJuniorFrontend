@@ -7,6 +7,7 @@ $(document).ready(function(){
 });
 
 console.log("executou")
+
 document.addEventListener('DOMContentLoaded', function() {
   // Função para fazer fetch na API e preencher a grade
   function fetchAndPopulateGrid() {
