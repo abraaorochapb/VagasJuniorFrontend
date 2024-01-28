@@ -12,27 +12,49 @@
     </head>
 
     <body>
-      <nav class="light-blue lighten-1">
-        <div class="nav-wrapper container">
-          <div class="brand-logo light">VagasJunior</div>
 
-          <!-- header desktop -->
-          <ul class="right hide-on-med-and-down">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="">Postar vaga</a></li>
-            <li><a href="https://www.linkedin.com/in/abraao-rocha-de-paula-849561259/" target="_blank">Contato</a></li>
+      <header class="navbar-fixed">
+        <nav class="light-blue darken-4">
+          <div class="nav-wrapper container">
+            <div class="brand-logo">VagasJunior</div>
+            <!-- header desktop -->
+            <ul class="right hide-on-med-and-down">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="">Postar vaga</a></li>
+              <li><a href="https://www.linkedin.com/in/abraao-rocha-de-paula-849561259/" target="_blank">Contato</a></li>
+            </ul>
+    
+            <!-- header mobile -->
+            <ul id="slide-out" class="sidenav">
+              <li><a href="index.html"><i class="material-icons left">home</i>Home</a></li>
+              <li><a href=""><i class="material-icons left">add_circle</i>Postar vaga</a></li>
+              <li><a href="https://www.linkedin.com/in/abraao-rocha-de-paula-849561259/" target="_blank"><i class="material-icons left">business</i>Contato</a></li>
+            </ul>
+            <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            </div>
+        </nav>
+      </header>
+
+      <main>
+        <div class="slider">
+          <ul class="slides">
+            <li>
+              <img src="imagens/pexels-lukas-574071.jpg" class="responsive-img">
+              <div class="caption center-align">
+                <h1>Vagas para todos</h1>
+                <h5>Seu novo trabalho em apenas alguns cliques!</h5>
+            </li>
+
+            <li>
+              <img src="imagens/pexels-cottonbro-studio-4709285.jpg" class="responsive-img">
+              <div class="caption right-align">
+                <h1 class="white-text lighten-3">Junte-se a este mercado crescente e repleto de oportunidades</h1>
+              </div>         
+            </li>
           </ul>
+        </div>
 
-          <!-- header mobile -->
-          <ul id="slide-out" class="sidenav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="">Postar vaga</a></li>
-            <li><a href="https://www.linkedin.com/in/abraao-rocha-de-paula-849561259/" target="_blank">Contato</a></li>
-          </ul>
-          <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-
-          </div>
-      </nav>
+      </main>
 
     </body>
 
